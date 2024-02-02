@@ -17,9 +17,11 @@ function ProductsList() {
         "Loading"
       ) : (
         <div className="wrapper">
+          <h1 className="store-title">CPB-NEW-DEVELOPER</h1>
+
           <div className="products">
-            {items.map(({ node }) => (
-              <Product key={node.id} node={node} />
+            {items.map(({ node }, index) => (
+              <Product key={node.id} node={node} index={index} />
             ))}
           </div>
         </div>

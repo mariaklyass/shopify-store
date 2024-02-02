@@ -1,12 +1,17 @@
 import "./styles/css/style.css";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+
 import ProductsList from "./ProductsList";
+import ProductDetails from "./ProductDetails";
 
 function App() {
   return (
-    <div className="container">
-      <h1 className="store-title">CPB-NEW-DEVELOPER</h1>
-      <ProductsList />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ProductsList />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
+      </Routes>
+    </Router>
   );
 }
 
