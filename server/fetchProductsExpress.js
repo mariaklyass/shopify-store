@@ -11,7 +11,7 @@ const { SHOPIFY_ACCESS_TOKEN } = process.env;
 const app = express();
 const port = 3000;
 const db =
-  "mongodb+srv://klyassmaria:BQJS3Hm0uIauKELI@shopify-cpb.fw6rfec.mongodb.net/?retryWrites=true&w=majority";
+  "mongodb+srv://klyassmaria:BQJS3Hm0uIauKELI@shopify-cpb.fw6rfec.mongodb.net/products?retryWrites=true&w=majority";
 
 mongoose
   .connect(db)
