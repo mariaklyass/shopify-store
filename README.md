@@ -1,11 +1,11 @@
 # CPB-NEW-DEVELOPER
 
-SPA application (frontend: React.js, Redux, Vite; backend: Node.js, Express) that fetches data from a Shopify store via GraphQL API.
+SPA application (frontend: React.js, Redux, Vite; backend: Node.js, Express, MongoDB) that fetches data from a Shopify store via GraphQL API.
 
 ## Features
 
 - adaptive interface
-- fetched data is cached on the server
+- fetched data is saved in MongoDB 
 - images are rendered with canvas
 
 ### Installation
@@ -36,3 +36,5 @@ The backend is available at http://localhost:3000/getProducts
 ![mobile](https://github.com/mariaklyass/shopify-store/assets/110608602/ddfa40b7-4c4b-4ce2-a278-45c6b1c8e185)
 
 ![product:id](https://github.com/mariaklyass/shopify-store/assets/110608602/73894c27-8b37-4e74-926e-dd272fabaf5c)
+
+![mongodb](https://github.com/mariaklyass/shopify-store/assets/110608602/43f949f4-e3d7-48ba-a795-f00d8806cdda)
