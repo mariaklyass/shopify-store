@@ -11,7 +11,6 @@ export const getProducts = createAsyncThunk(
   async (_, thunkAPI) => {
     try {
       const data = await request();
-      console.log(data[0].node);
       return data;
     } catch (err) {
       return thunkAPI.rejectWithValue(err);
